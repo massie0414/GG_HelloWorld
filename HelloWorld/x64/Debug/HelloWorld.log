@@ -1,0 +1,23 @@
+﻿  echo [objects] > linkfile
+  echo HelloGameGear.o >> linkfile
+  wlalink -v -S -A linkfile HelloWorld.gg
+  -------------------------------------------------
+  ---                   ROM                     ---
+  -------------------------------------------------
+  ROM bank 0 (29478 bytes (89.96%) free)
+    - Free space at $0cbf-$7fdf (29473 bytes)
+    - Free space at $7ff8-$7ff9 (2 bytes)
+    - Free space at $7ffc-$7ffe (3 bytes)
+  -------------------------------------------------
+  ---                   RAM                     ---
+  -------------------------------------------------
+  No .RAMSECTIONs were found, no information about RAM.
+  -------------------------------------------------
+  ---           HEADERS AND FOOTERS             ---
+  -------------------------------------------------
+  No headers or footers found.
+  -------------------------------------------------
+  ---                 SUMMARY                   ---
+  -------------------------------------------------
+  ROM: 29478 bytes (89.96%) free of total 32768.
+  RAM: No .RAMSECTIONs were found, no information about RAM.

@@ -1,0 +1,65 @@
+; this file was created with wlalink by ville helin <ville.helin@iki.fi>.
+; wla symbolic information for "HelloWorld.gg".
+
+[information]
+version 3
+wlasymbol true
+
+[labels]
+00:0000 main
+00:0018 InfiniteLoop
+00:001b VdpData
+00:0026 VdpDataEnd
+00:0026 setUpVdpRegisters
+00:0030 clearVram
+00:0039 clearVramLoop
+00:0044 PaletteData
+00:0048 PaletteDataEnd
+00:0048 loadColorPalette
+00:0058 FontData
+00:0c38 FontDataEnd
+00:0c38 loadFontTiles
+00:0c48 Message
+00:0c62 MessageEnd
+00:0c62 writeText
+00:0c74 turnOnScreen
+00:0c7d prepareVram
+00:0c88 writeToVram
+00:0cbb *WLA_SDSC_PRG_AUTHOR_PTR
+00:0caf *WLA_SDSC_PRG_NAME_PTR
+00:0c93 *WLA_SDSC_PRG_NOTES_PTR
+
+[definitions]
+00000004 _sizeof_*WLA_SDSC_PRG_AUTHOR_PTR
+0000000c _sizeof_*WLA_SDSC_PRG_NAME_PTR
+0000001c _sizeof_*WLA_SDSC_PRG_NOTES_PTR
+00000018 _sizeof_main
+00000003 _sizeof_InfiniteLoop
+0000000b _sizeof_VdpData
+00000000 _sizeof_VdpDataEnd
+0000000a _sizeof_setUpVdpRegisters
+00000009 _sizeof_clearVram
+0000000b _sizeof_clearVramLoop
+00000004 _sizeof_PaletteData
+00000000 _sizeof_PaletteDataEnd
+00000010 _sizeof_loadColorPalette
+00000be0 _sizeof_FontData
+00000000 _sizeof_FontDataEnd
+00000010 _sizeof_loadFontTiles
+0000001a _sizeof_Message
+00000000 _sizeof_MessageEnd
+00000012 _sizeof_writeText
+00000009 _sizeof_turnOnScreen
+0000000b _sizeof_prepareVram
+
+[sections]
+00000c93 00:0c93 0c93 0000001c !__WLA_SDSCTAG_STRING_NOTES
+00000caf 00:0caf 0caf 0000000c !__WLA_SDSCTAG_STRING_NAME
+00000cbb 00:0cbb 0cbb 00000004 !__WLA_SDSCTAG_STRING_AUTHOR
+
+[source files v2]
+0001:0001 ea9ee96e HelloGameGear.asm 
+0001:0002 dcfd6df9 FontData.inc 
+
+[rom checksum]
+2e061b6b

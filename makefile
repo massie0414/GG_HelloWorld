@@ -1,7 +1,7 @@
 CC = wla-z80
-CFLAGS = -o
+CFLAGS = -i -o
 LD = wlalink
-LDFLAGS = -vds
+LDFLAGS = -v -S -A
 
 SFILES = HelloGameGear.asm
 IFILES = FontData.inc
@@ -14,7 +14,7 @@ all: $(OFILES) $(IFILES) makefile
 	$(LD) $(LDFLAGS) linkfile $(OUT)
 
 %.o: %.asm
-	$(CC) $(CFLAGS) $< $@
+	$(CC) $(CFLAGS) $@ $<
 
 clean:
 	rm -f $(OFILES) core *~ *.sym linkfile $(OUT)
