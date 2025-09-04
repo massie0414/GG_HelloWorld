@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\apps\\GG_HelloWorld\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C3919E20-A103-0EF1-814A-CDE905549605}|HelloWorld.vcxproj|C:\\apps\\GG_HelloWorld\\HelloGameGear.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C3919E20-A103-0EF1-814A-CDE905549605}|HelloWorld.vcxproj|solutionrelative:HelloGameGear.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3919E20-A103-0EF1-814A-CDE905549605}|HelloWorld.vcxproj|C:\\apps\\GG_HelloWorld\\FontData.inc||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C3919E20-A103-0EF1-814A-CDE905549605}|HelloWorld.vcxproj|solutionrelative:FontData.inc||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C3919E20-A103-0EF1-814A-CDE905549605}|HelloWorld.vcxproj|C:\\apps\\GG_HelloWorld\\makefile||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{C3919E20-A103-0EF1-814A-CDE905549605}|HelloWorld.vcxproj|solutionrelative:makefile||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +42,32 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HelloGameGear.asm",
+              "DocumentMoniker": "C:\\apps\\GG_HelloWorld\\HelloGameGear.asm",
+              "RelativeDocumentMoniker": "HelloGameGear.asm",
+              "ToolTip": "C:\\apps\\GG_HelloWorld\\HelloGameGear.asm",
+              "RelativeToolTip": "HelloGameGear.asm",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-01T15:32:09.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FontData.inc",
+              "DocumentMoniker": "C:\\apps\\GG_HelloWorld\\FontData.inc",
+              "RelativeDocumentMoniker": "FontData.inc",
+              "ToolTip": "C:\\apps\\GG_HelloWorld\\FontData.inc",
+              "RelativeToolTip": "FontData.inc",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-01T15:31:56.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "linkfile",
               "DocumentMoniker": "C:\\apps\\GG_HelloWorld\\linkfile",
               "RelativeDocumentMoniker": "linkfile",
@@ -42,21 +75,19 @@
               "RelativeToolTip": "linkfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-01T14:57:45.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T14:57:45.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "makefile",
               "DocumentMoniker": "C:\\apps\\GG_HelloWorld\\makefile",
               "RelativeDocumentMoniker": "makefile",
               "ToolTip": "C:\\apps\\GG_HelloWorld\\makefile",
               "RelativeToolTip": "makefile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-01T14:56:43.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T14:56:43.884Z"
             }
           ]
         },

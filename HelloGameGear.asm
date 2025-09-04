@@ -13,15 +13,14 @@
 
 ; WLA-DX banking setup
 .memorymap
-defaultslot 0
-slotsize $8000
-slot 0 $0000
+    defaultslot 0
+    slotsize $8000 slot 0 $0000
 .endme
 
 .rombankmap
-bankstotal 1
-banksize $8000
-banks 1
+    bankstotal 1
+    banksize $8000
+    banks 1
 .endro
 
 .bank 0 slot 0
@@ -57,17 +56,17 @@ InfiniteLoop:
 ;
 
 VdpData:
-.db $06 ; reg. 0, display and interrupt mode.
-.db $a1 ; reg. 1, display and interrupt mode.
-.db $ff ; reg. 2, name table address. $ff = name table at $3800.
-.db $ff ; reg. 3, n.a., always set it to $ff.
-.db $ff ; reg. 4, n.a., always set it to $ff.
-.db $ff ; reg. 5, sprite attribute table.
-.db $ff ; reg. 6, sprite tile address.
-.db $ff ; reg. 7, border color.
-.db $00 ; reg. 8, horizontal scroll value = 0.
-.db $00 ; reg. 9, vertical scroll value = 0.
-.db $ff ; reg. 10, raster line interrupt. Turn off line int. requests.
+    .db $06 ; reg. 0, display and interrupt mode.
+    .db $a1 ; reg. 1, display and interrupt mode.
+    .db $ff ; reg. 2, name table address. $ff = name table at $3800.
+    .db $ff ; reg. 3, n.a., always set it to $ff.
+    .db $ff ; reg. 4, n.a., always set it to $ff.
+    .db $ff ; reg. 5, sprite attribute table.
+    .db $ff ; reg. 6, sprite tile address.
+    .db $ff ; reg. 7, border color.
+    .db $00 ; reg. 8, horizontal scroll value = 0.
+    .db $00 ; reg. 9, vertical scroll value = 0.
+    .db $ff ; reg. 10, raster line interrupt. Turn off line int. requests.
 VdpDataEnd:
 
 setUpVdpRegisters:
@@ -103,9 +102,9 @@ clearVram:
 
 ; two colors only
 PaletteData:
-;    GGGGRRRR   ----BBBB (Format Game Gear, G=Green, R=Red, B=Blue)
-.db %00000000, %00001111 ; Color 0: Blue
-.db %00001111, %00000000 ; Color 1: Red
+    ;    GGGGRRRR   ----BBBB (Format Game Gear, G=Green, R=Red, B=Blue)
+    .db %00000000, %00001111 ; Color 0: Blue
+    .db %00001111, %00000000 ; Color 1: Red
 PaletteDataEnd:
 
 loadColorPalette:
@@ -124,7 +123,7 @@ loadColorPalette:
 
 ; tiles with characters
 FontData:
-.include "FontData.inc"
+    .include "FontData.inc"
 FontDataEnd:
 
 loadFontTiles:
@@ -139,8 +138,8 @@ loadFontTiles:
 
 ; Text Message ("Hello, World!")
 Message:
-;   H   e   l   l   o   ,       W   o   r   l   d   !
-.dw $28,$45,$4c,$4c,$4f,$0c,$00,$37,$4f,$52,$4c,$44,$01
+    ;   H   e   l   l   o   ,       W   o   r   l   d   !
+    .dw $28,$45,$4c,$4c,$4f,$0c,$00,$37,$4f,$52,$4c,$44,$01
 MessageEnd:
 
 writeText:
